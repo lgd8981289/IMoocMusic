@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!--<item name="android:statusBarColor">@android:color/black</item>-->
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+
+        <!-- 打开Activity时，新进入的activity执行的动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <!-- 打开Activity时，原Activity执行动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <!-- 退出Activity时， 退出的Activity执行动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+        <!-- 退出Activity时， 重新显示的Activity执行动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+    </style>
+
+    <!--分割线-->
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+        <item name="android:layout_margin">@dimen/marginSize</item>
+    </style>
+
+    <!--登录按钮-->
+    <style name="commitBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btnHeight</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginSize</item>
+        <item name="android:layout_marginRight">@dimen/marginSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_commit_select</item>
+    </style>
+
+</resources>

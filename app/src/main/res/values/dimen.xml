@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navBarHeight">56dp</dimen>
+    <dimen name="marginSize">16dp</dimen>
+    <dimen name="navBarTitleSize">22sp</dimen>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="infoSize">14sp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+    <dimen name="btnHeight">44dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="itemHeight">44dp</dimen>
+    <dimen name="marginTabSize">4dp</dimen>
+    <dimen name="albumMarginSize">4dp</dimen>
+    <dimen name="playNumImgSize">18dp</dimen>
+    <dimen name="itemIconSize">56dp</dimen>
+    <dimen name="itemPlaySize">36dp</dimen>
+    <dimen name="discTopSize">90dp</dimen>
+    <dimen name="playMusicIconSize">210dp</dimen>
+</resources>

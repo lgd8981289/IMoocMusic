@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activitys.LoginActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"/>
+
+    <com.sunday.imoocmusicdemo.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="请输入手机号"
+        app:is_password="false"></com.sunday.imoocmusicdemo.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <com.sunday.imoocmusicdemo.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="请输入密码"
+        app:is_password="true"></com.sunday.imoocmusicdemo.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+    <com.sunday.imoocmusicdemo.views.InputView
+        android:id="@+id/input_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="请确认密码"
+        app:is_password="true"></com.sunday.imoocmusicdemo.views.InputView>
+
+    <View
+        style="@style/line"/>
+
+
+    <Button
+        style="@style/commitBtn"
+        android:text="注  册"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onRegisterClick"/>
+
+</LinearLayout>

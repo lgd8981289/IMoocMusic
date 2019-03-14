@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/item_commit_select"
+    android:padding="@dimen/marginSize">
+
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/itemIconSize"
+        android:layout_height="@dimen/itemIconSize"
+        android:src="@mipmap/img1"/>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/marginSize">
+        
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="音乐名称"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textColor="@color/infoColor"
+            android:textSize="@dimen/infoSize"
+            android:text="作者"/>
+        
+        
+    </LinearLayout>
+    
+    
+    <ImageView
+        android:layout_width="@dimen/itemPlaySize"
+        android:layout_height="@dimen/itemPlaySize"
+        android:src="@mipmap/play"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/marginSize"/>
+    
+</LinearLayout>

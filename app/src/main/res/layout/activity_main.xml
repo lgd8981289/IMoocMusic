@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.MainActivity">
+
+    <include layout="@layout/nav_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginSize"
+                android:layout_marginLeft="@dimen/marginSize"
+                android:layout_marginBottom="@dimen/marginSize">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="22dp"
+                    android:background="@color/mainColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐歌单"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/titleSize"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/marginTabSize"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="@dimen/marginSize">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="22dp"
+                    android:background="@color/mainColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最热音乐"
+                    android:textColor="@color/titleColor"
+                    android:textSize="@dimen/titleSize"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/marginTabSize"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

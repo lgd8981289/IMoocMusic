@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 光盘 -->
+    <FrameLayout
+        android:id="@+id/fl_play_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/discTopSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/disc"/>
+
+        <!-- CircleImageView -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/playMusicIconSize"
+            android:layout_height="@dimen/playMusicIconSize"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/black"/>
+
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play_music"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <!-- 指针 -->
+    <ImageView
+        android:id="@+id/iv_needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/needle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"/>
+
+</FrameLayout>
