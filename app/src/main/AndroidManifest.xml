@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitys.PlayMusicActivity"></activity>
+        <service
+            android:name=".services.MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".activitys.PlayMusicActivity" />
         <activity android:name=".activitys.AlbumListActivity" />
         <activity android:name=".activitys.ChangePasswordActivity" />
         <activity android:name=".activitys.MeActivity" />
