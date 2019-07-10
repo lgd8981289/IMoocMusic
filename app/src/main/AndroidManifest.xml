@@ -3,12 +3,14 @@
     package="com.sunday.imoocmusicdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <!-- Android 9.0 前台权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
